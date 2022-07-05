@@ -1,7 +1,10 @@
 #!/bin/bash
 
 ## Iremos precisar de algumas informações
-echo "Qual a sua tribo?"
+echo "Qual a sua turma? (número)"
+read turma
+
+echo "Qual a sua tribo? (letra)"
 read tribo
 
 echo "Você quer subir projetos de...?"
@@ -30,8 +33,8 @@ case $module in
   read foundationProjects
     case $foundationProjects in
       1)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-lessons-learned.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-lessons-learned"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-lessons-learned.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-lessons-learned"
       pathsInvert="--path trybe.yml \
         --path reporter.json \
         --path exemplo.png \
@@ -43,8 +46,8 @@ case $module in
         --path .github/ \
         --invert-paths";;
       2)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-playground-functions.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-playground-functions"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-playground-functions.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-playground-functions"
       pathsInvert="--path trybe.yml \
         --path README.md \
         --path .editorconfig \
@@ -53,8 +56,8 @@ case $module in
         --path .github/ \
         --invert-paths";;
       3)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-pixels-art.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-pixels-art"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-pixels-art.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-pixels-art"
       pathsInvert="--path trybe.yml \
         --path reporter.json \
         --path art-with-pixels.gif \
@@ -65,8 +68,8 @@ case $module in
         --path .github/ \
         --invert-paths";;
       4)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-todo-list.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-todo-list"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-todo-list.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-todo-list"
       pathsInvert="--path trybe.yml \
         --path reporter.json \
         --path todo-list-example.gif \
@@ -78,8 +81,8 @@ case $module in
         --path .github/ \
         --invert-paths";;
       5)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-trybewarts.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-trybewarts"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-trybewarts.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-trybewarts"
       pathsInvert="--path trybe.yml \
         --path reporter.json \
         --path pagina-principal.png \
@@ -92,16 +95,16 @@ case $module in
         --path .github/ \
         --invert-paths";;
       6)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-js-unit-tests.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-js-unit-tests"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-js-unit-tests.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-js-unit-tests"
       pathsInvert="--path trybe.yml \
         --path README.md \
         --path .trybe/ \
         --path .github/ \
         --invert-paths";;
       7)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-zoo-functions.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-zoo-functions"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-zoo-functions.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-zoo-functions"
       pathsInvert="--path .trybe \
         --path .github \
         --path trybe.yml \
@@ -122,8 +125,8 @@ case $module in
         --path README.md \
         --invert-paths";;
       8)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-shopping-cart.gi"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-shopping-cart"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-shopping-cart.gi"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-shopping-cart"
       pathsInvert="--path trybe.yml \
         --path reporter.json \
         --path prototipo.gif \
@@ -149,8 +152,8 @@ case $module in
   read frontendProject
     case $frontendProject in
       1)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-solar-system.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-solar-system"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-solar-system.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-solar-system"
       pathsInvert="--path trybe.yml \
         --path skip-image.png \
         --path only-image.png \
@@ -162,8 +165,8 @@ case $module in
         --path src/tests/ \
         --invert-path";;
       2)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-tryunfo.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-tryunfo"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-tryunfo.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-tryunfo"
       pathsInvert="--path trybe.yml \
         --path skip-image.png \
         --path only-image.png \
@@ -177,8 +180,8 @@ case $module in
         --path src/tests/ \
         --invert-path";;
       3)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-trybetunes.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-trybetunes"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-trybetunes.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-trybetunes"
       pathsInvert="--path trybe.yml \
         --path skip-image.png \
         --path only-image.png \
@@ -191,8 +194,8 @@ case $module in
         --path src/setupTests.js \
         --invert-path";;
       4)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-frontend-online-store.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-frontend-online-store"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-frontend-online-store.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-frontend-online-store"
       pathsInvert="--path .trybe \
         --path .github \
         --path trybe.yml \
@@ -207,8 +210,8 @@ case $module in
         --path README.md \
         --invert-paths";;
       5)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-react-testing-library.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-react-testing-library"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-react-testing-library.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-react-testing-library"
       pathsInvert="--path .trybe \
         --path .github \
         --path trybe.yml \
@@ -220,8 +223,8 @@ case $module in
         --path README.md \
         --invert-paths";;
       6)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-trybewallet.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-trybewallet"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-trybewallet.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-trybewallet"
       pathsInvert="--path .trybe \
         --path .github \
         --path trybe.yml \
@@ -242,8 +245,8 @@ case $module in
         --path README.md \
         --invert-paths";;
       7)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-trivia-react-redux.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-trivia-react-redux"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-trivia-react-redux.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-trivia-react-redux"
       pathsInvert="--path trybe.yml \
         --path trello.gif \
         --path reporter.json \
@@ -257,8 +260,8 @@ case $module in
         --path src/setupTests.js \
         --invert-paths";;
       8)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-starwars-planets-search.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-starwars-planets-search"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-starwars-planets-search.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-starwars-planets-search"
       pathsInvert="--path .trybe \
         --path .github \
         --path trybe.yml \
@@ -279,8 +282,8 @@ case $module in
         --path README.md \
         --invert-paths";;
       9)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-recipes-app.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-recipes-app"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-recipes-app.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-recipes-app"
       pathsInvert="--path .trybe \
         --path .github \
         --path trybe.yml \
@@ -304,8 +307,8 @@ case $module in
   read backendProject
     case $backendProject in
       1)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-docker-todo-list.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-docker-todo-list"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-docker-todo-list.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-docker-todo-list"
       pathsInvert="--path __tests__ \
         --path .github \
         --path .trybe \
@@ -317,8 +320,8 @@ case $module in
         --path docker/todo-app/intro.gif \
         --invert-paths";;
       2)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-mysql-all-for-one.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-mysql-all-for-one"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-mysql-all-for-one.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-mysql-all-for-one"
       pathsInvert="--path .trybe \
         --path .github \
         --path .vscode \
@@ -345,7 +348,7 @@ case $module in
         --path tests/challengesResults/challengeResult15.js \
         --path tests/challengesResults/challengeResult16.js \
         --path tests/challengesResults/challengeResult17.js \
-        --path tests/challengesResults/challengeResult18.js \
+        --path tests/challengesResults/challengeResult$turma.js \
         --path tests/challengesResults/challengeResult19.js \
         --path tests/challengesResults \
         --path tests/filteringChallenges.spec.js \
@@ -354,8 +357,8 @@ case $module in
         --path images \
         --invert-paths";;
       3)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-mysql-one-for-all.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-mysql-one-for-all"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-mysql-one-for-all.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-mysql-one-for-all"
       pathsInvert="--path .trybe \
         --path .github \
         --path .vscode \
@@ -367,8 +370,8 @@ case $module in
         --path images \
         --invert-paths";;
       4)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-talker-manager.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-talker-manager"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-talker-manager.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-talker-manager"
       pathsInvert="--path .trybe \
         --path .github \
         --path .vscode \
@@ -387,8 +390,8 @@ case $module in
         --path README.md \
         --invert-paths";;
       5)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-store-manager.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-store-manager"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-store-manager.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-store-manager"
       pathsInvert="git filter-repo \
         --path .trybe \
         --path .github \
@@ -414,8 +417,8 @@ case $module in
         --path README.md \
         --invert-paths ";;
       6)
-      linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-blogs-api.git"
-      namePortifolioTrybe="sd-018-${tribo,,}-project-blogs-api"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-blogs-api.git"
+      namePortifolioTrybe="sd-0$turma-${tribo,,}-project-blogs-api"
       pathsInvert="--path .trybe \
         --path .github \
         --path .vscode \
@@ -444,7 +447,7 @@ case $module in
         --path tests/req15-editPost.test.js \
         --path tests/req16-deletePost.test.js \
         --path tests/req17-deleteUsers.test.js \
-        --path tests/req18-searchPost.test.js \
+        --path tests/req$turma-searchPost.test.js \
         --path tests \
         --path public/der.png \
         --path public/remote-container.png \
