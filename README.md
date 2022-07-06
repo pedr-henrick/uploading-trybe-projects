@@ -29,18 +29,20 @@ Caso ainda não funcione talvez seja por você usar algum sistema operacional di
 ./uploadingTrybeProjects.sh
 ```
 Será pedido durante toda a aplicação informações como:
-1. Qual o módulo
-2. Qual o projeto da trybe
-3. Qual a sua branch no projeto
-4. Qual o link ssh do seu repositório pessoal que deseja subir os arquivos
-5. Qual o nome do repositório pessoal criado
+1. Qual a turma
+2. Qual a tribo
+3. Qual o módulo
+4. Qual o projeto da trybe
+5. Qual a sua branch no projeto
+6. Qual o link ssh do seu repositório pessoal que deseja subir os arquivos
+7. Qual o nome do repositório pessoal criado
 
 ### :warning: Tenha certeza que colocou todos os dados corretamente. Letras maiúsculas e minúsculas fazem diferença!
 
-# Turma XP tribo A e outras turmas da trybe
-Há também a possibilidade de ter esse script voltado para a turma xp a e para todas as turmas **que contém tribos**. Nesse repositório há duas branchs com versões alternativas do mesmo script, em uma delas é perguntado a turma e a tribo e na outra somente a tribo (Que poderá ser usado pela turma XP tribo A).
+# Outras turmas da trybe
+Há também a possibilidade de ter esse script voltado para todas as turmas **que contém tribos**. Nesse repositório há uma branch com uma versão alternativa do mesmo script, onde nela é perguntado a turma e a tribo.
 
-### :warning: Esses arquivos ainda não foram testados!
+### :warning: Esse arquivo ainda não foi testado!
 
 ## O que a aplicação faz:
 Seguindo as instruções, nossa aplicação fará todo o passo a passo definido e explicado pelo [Guthias](https://github.com/Guthias) nessa [thread](https://trybecourse.slack.com/archives/C014P6FT6BF/p1641235699422400).
