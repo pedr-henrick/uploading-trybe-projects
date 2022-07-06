@@ -1,6 +1,6 @@
 # Bem vindo ao repositório uploading-trybe-projects
 
-Scripts para limpeza e publicação de projetos feitos por estudantes da Trybe-Turma XP-Tribo-B
+Scripts para limpeza e publicação de projetos feitos por estudantes da Trybe-Turma XP
 
 # Pré-requisitos
 
