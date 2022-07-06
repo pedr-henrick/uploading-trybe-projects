@@ -125,7 +125,7 @@ case $module in
         --path README.md \
         --invert-paths";;
       8)
-      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-shopping-cart.gi"
+      linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-project-shopping-cart.git"
       namePortifolioTrybe="sd-0$turma-${tribo,,}-project-shopping-cart"
       pathsInvert="--path trybe.yml \
         --path reporter.json \
