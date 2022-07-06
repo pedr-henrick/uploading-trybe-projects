@@ -389,8 +389,7 @@ case $module in
       5)
       linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-store-manager.git"
       namePortifolioTrybe="sd-018-${tribo,,}-store-manager"
-      pathsInvert="git filter-repo \
-        --path .trybe \
+      pathsInvert="--path .trybe \
         --path .github \
         --path .vscode \
         --path trybe.yml \
