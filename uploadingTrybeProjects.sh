@@ -454,17 +454,7 @@ read nameBranch
 echo "Qual é o link SSH do seu portifólio pessoal?"
 read linkPortifolioPessoal
 
-firstBreak=(${linkPortifolioPessoal//"/"/ })
-secondBreak=(${firstBreak[1]//".git"/ })
-namePortifolioPessoal="${secondBreak[0]}"
-
 ## Com essas informações salvas seguiremos com os comando:
-
-## Criaremos uma pasta onde ficará o repositório pessoal com o mesmo nome usado no github
-mkdir $namePortifolioPessoal
-
-## Entraremos nessa pasta criada
-cd $namePortifolioPessoal
 
 ## Faremos o clone do repósitório da trybe
 git clone $linkPortifolioTrybe
@@ -475,30 +465,15 @@ cd $namePortifolioTrybe
 ## Alterando para a branch pessoal
 git checkout $nameBranch
 
+## Executaremos o comando que irá remover os arquivos que são da trybe deixando apenas o com os nossos commits 
+git-filter-repo $pathsInvert --force
+
 ## Adicionaremos um novo remote com o link do repositório pessoal
 git remote add personal $linkPortifolioPessoal
 
 ## Faremos um push do projeto da trybe para nosso repositório pessoal 
-git push personal $nameBranch:main
-
-## Agora sairemos desse portifólio
-cd ..
-
-## Faremos o clone do repósitório pessoal
-git clone $linkPortifolioPessoal
-
-## Entraremos no portifólio
-cd $namePortifolioPessoal
-
-## Executaremos o comando que irá remover os arquivos que são da trybe deixando apenas o com os nossos commits 
-git-filter-repo $pathsInvert --force
-
-## Agora devemos referenciar nosso repositorio remoto novamente  com o comando
-git remote add origin $linkPortifolioPessoal
-
-##  Se você tentar dar o git push ira dar um erro falando que esta faltando alguns arquivos no seu repositorio local, então utilize o comando
-git push -u origin main --force
+git push personal $nameBranch:main --force
 
 ## Voltaremos para a pasta onde está o script
-cd ../../
-rm -rf $namePortifolioPessoal
+cd ../
+rm -rf $namePortifolioTrybe
