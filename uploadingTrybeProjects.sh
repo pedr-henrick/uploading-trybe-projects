@@ -13,12 +13,6 @@ echo "2) Frontend"
 echo "3) Backend"
 read module
 
-echo "Você quer subir projetos de...?"
-echo "1) Fundamentos"
-echo "2) Frontend"
-echo "3) Backend"
-read module
-
 case $module in
   1)
   echo "Qual projeto você deseja subir?"
@@ -392,8 +386,7 @@ case $module in
       5)
       linkPortifolioTrybe="git@github.com:tryber/sd-0$turma-${tribo,,}-store-manager.git"
       namePortifolioTrybe="sd-0$turma-${tribo,,}-store-manager"
-      pathsInvert="git filter-repo \
-        --path .trybe \
+      pathsInvert="--path .trybe \
         --path .github \
         --path .vscode \
         --path trybe.yml \
