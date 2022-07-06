@@ -454,19 +454,11 @@ read nameBranch
 echo "Qual é o link SSH do seu portifólio pessoal?"
 read linkPortifolioPessoal
 
-echo "Qual é o nome do seu portfólio pessoal? (Evite colocar espaços)"
-read namePortifolioPessoal
+firstBreak=(${linkPortifolioPessoal//"/"/ })
+secondBreak=(${firstBreak[1]//".git"/ })
+namePortifolioPessoal="${secondBreak[0]}"
 
 ## Com essas informações salvas seguiremos com os comando:
-
-# if mkdir $namePortifolioPessoal
-#   ## Entraremos nessa pasta criada
-#   then cd $namePortifolioPessoal
-# else 
-#   rm -rf $namePortifolioPessoal
-#   mkdir $namePortifolioPessoal
-#   cd $namePortifolioPessoal
-
 
 ## Criaremos uma pasta onde ficará o repositório pessoal com o mesmo nome usado no github
 mkdir $namePortifolioPessoal
