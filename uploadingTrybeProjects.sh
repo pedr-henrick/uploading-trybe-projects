@@ -487,7 +487,7 @@ git checkout $nameBranch
 git remote add personal $linkPortifolioPessoal
 
 ## Faremos um push do projeto da trybe para nosso repositório pessoal 
-git push personal $nameBranch
+git push personal $nameBranch:main
 
 ## Agora sairemos desse portifólio
 cd ..
@@ -505,7 +505,7 @@ git-filter-repo $pathsInvert --force
 git remote add origin $linkPortifolioPessoal
 
 ##  Se você tentar dar o git push ira dar um erro falando que esta faltando alguns arquivos no seu repositorio local, então utilize o comando
-git push -u origin $nameBranch --force
+git push -u origin main --force
 
 ## Voltaremos para a pasta onde está o script
 cd ../../
