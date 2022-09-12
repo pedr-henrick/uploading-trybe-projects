@@ -484,6 +484,9 @@ git checkout $nameBranch
 ## Executaremos o comando que irá remover os arquivos que são da trybe deixando apenas o com os nossos commits 
 git-filter-repo $pathsInvert --force
 
+## criaremos um novo repositório através do github CLI
+gh repo create $projectName --public
+
 ## Adicionaremos um novo remote com o link do repositório pessoal
 git remote add personal "git@github.com:SrTonn/${projectName}.git"
 
