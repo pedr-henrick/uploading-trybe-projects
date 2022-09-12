@@ -454,8 +454,8 @@ case $module in
     esac;;
 esac
 
-echo "Qual é o nome da sua branch do projeto na trybe?"
-read nameBranch
+## extrairemos o nome do projeto da trybe
+projectName=$(grep -Eo '(project|mysql|store)(-\w+){1,}' <<< $linkPortifolioTrybe)
 
 echo "Qual é o link SSH do seu portifólio pessoal?"
 read linkPortifolioPessoal
@@ -485,7 +485,7 @@ git checkout $nameBranch
 git-filter-repo $pathsInvert --force
 
 ## Adicionaremos um novo remote com o link do repositório pessoal
-git remote add personal $linkPortifolioPessoal
+git remote add personal "git@github.com:SrTonn/${projectName}.git"
 
 ## Faremos um push do projeto da trybe para nosso repositório pessoal 
 git push personal $nameBranch:main --force
