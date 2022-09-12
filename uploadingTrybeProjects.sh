@@ -457,8 +457,10 @@ esac
 ## extrairemos o nome do projeto da trybe
 projectName=$(grep -Eo '(project|mysql|store)(-\w+){1,}' <<< $linkPortifolioTrybe)
 
-echo "Qual é o link SSH do seu portifólio pessoal?"
-read linkPortifolioPessoal
+## coletando nome para procurar branch
+echo "Informe o nome utilizado nas branchs"
+echo "PS: caso tenha outro aluno com o mesmo nome, informe o sobrenome separado por ponto, ex.: steve.jobs"
+read userName
 
 ## Com essas informações salvas seguiremos com os comando:
 
