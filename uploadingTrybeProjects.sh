@@ -1,5 +1,7 @@
 #!/bin/bash
 
+isGroupProject=false
+
 ## Iremos precisar de algumas informações
 echo "Qual a sua tribo?"
 read tribo
@@ -185,6 +187,7 @@ case $module in
         --path src/setupTests.js \
         --invert-path";;
       4)
+      isGroupProject=true
       linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-frontend-online-store.git"
       namePortifolioTrybe="sd-018-${tribo,,}-project-frontend-online-store"
       pathsInvert="--path .trybe \
@@ -236,6 +239,7 @@ case $module in
         --path README.md \
         --invert-paths";;
       7)
+      isGroupProject=true
       linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-trivia-react-redux.git"
       namePortifolioTrybe="sd-018-${tribo,,}-project-trivia-react-redux"
       pathsInvert="--path trybe.yml \
@@ -273,6 +277,7 @@ case $module in
         --path README.md \
         --invert-paths";;
       9)
+      isGroupProject=true
       linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-recipes-app.git"
       namePortifolioTrybe="sd-018-${tribo,,}-project-recipes-app"
       pathsInvert="--path .trybe \
@@ -300,6 +305,7 @@ case $module in
       1)
       linkPortifolioTrybe="git@github.com:tryber/sd-018-${tribo,,}-project-docker-todo-list.git"
       namePortifolioTrybe="sd-018-${tribo,,}-project-docker-todo-list"
+      isGroupProject=true
       pathsInvert="--path __tests__ \
         --path .github \
         --path .trybe \
@@ -462,7 +468,17 @@ git clone $linkPortifolioTrybe
 ## Entraremos no portifólio
 cd $namePortifolioTrybe
 
-## Alterando para a branch pessoal
+## Coletando o nome da branch e entrando nela.
+if [ $isGroupProject == true ]; then
+  echo "Qual foi a branch do seu grupo no projeto ${projectName} ?"
+  read nameBranch
+else
+  nameBranch=$(git branch -a | grep -Eoi "${userName}.+")
+fi
+echo ""
+echo "nome da branch =>" $nameBranch
+
+read -p "Confirme se o nome da branch está correta, caso sim pressione enter ? caso não, cancele o script (CTRL+C)."
 git checkout $nameBranch
 
 ## Executaremos o comando que irá remover os arquivos que são da trybe deixando apenas o com os nossos commits 
