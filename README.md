@@ -18,7 +18,15 @@ Caso o comando de instalação do git-filter-repo não funcione execute esse:
 ```bash
 $ sudo snap install git-filter-repo --edge
 ```
+ou esse para uma instalação manual - recomendado para quem utiliza WSL
+```bash
+$ git clone git@github.com:newren/git-filter-repo.git
+$ sudo mv git-filter-repo/git-filter-repo /usr/local/bin && rm -rf git-filter-repo
+```
 Caso ainda não funcione talvez seja por você usar algum sistema operacional diferente do PopOS e do Ubuntu por isso talvez o comando seja um pouco diferente, consulte a [pagina de instalação](https://github.com/newren/git-filter-repo/blob/main/INSTALL.md)
+
+Para automatizar alguns passos de criação de repositórios no github iremos utilizar a CLI do github.
+Veja aqui como instalar -> https://cli.github.com/manual/installation
 
 # Passo a passo
 
@@ -33,9 +41,7 @@ Será pedido durante toda a aplicação informações como:
 2. Qual a tribo
 3. Qual o módulo
 4. Qual o projeto da trybe
-5. Qual a sua branch no projeto
-6. Qual o link ssh do seu repositório pessoal que deseja subir os arquivos
-7. Qual o nome do repositório pessoal criado
+5. Qual o nome do usuário utilizado nas branchs || Qual a sua branch no projeto
 
 ### :warning: Tenha certeza que colocou todos os dados corretamente. Letras maiúsculas e minúsculas fazem diferença!
 
