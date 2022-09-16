@@ -22,6 +22,7 @@ echo "Você quer subir projetos de...?"
 echo "1) Fundamentos"
 echo "2) Frontend"
 echo "3) Backend"
+echo "4) Quero subir todos os projetos!"
 read module
 
 case $module in
