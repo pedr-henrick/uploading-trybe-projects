@@ -9,8 +9,12 @@ git clone $linkPortifolioTrybe
 cd $namePortifolioTrybe
 
 ## Coletando o nome da branch e entrando nela.
-nameBranch=$(git branch -a | grep -Eoi "${userName}.+")
-echo ""
+if [ $isGroupProject == true ]; then
+  echo "Qual foi a branch do seu grupo no projeto ${projectName} ?"
+  read nameBranch
+else
+  nameBranch=$(git branch -a | grep -Eoi "${userName}.+")
+fi
 echo "nome da branch =>" $nameBranch
 
 echo "Confirme se o nome da branch está correta, caso sim pressione 'y', caso não pressione 'n'"

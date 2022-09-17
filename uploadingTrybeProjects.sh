@@ -1,6 +1,9 @@
 #!/bin/bash
 
 ## Iremos precisar de algumas informações
+isGroupProject=false
+export isGroupProject
+
 echo "Qual a sua turma? ex.: 18"
 read turma
 export turma
@@ -22,6 +25,7 @@ echo "Você quer subir projetos de...?"
 echo "1) Fundamentos"
 echo "2) Frontend"
 echo "3) Backend"
+echo "4) Quero subir todos os projetos!"
 read module
 
 case $module in

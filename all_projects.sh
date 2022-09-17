@@ -1,3 +1,5 @@
+#### Fundamentos:
+    cd fundamentals
     sudo chmod u+x ./lessons_learned.sh
     ./lessons_learned.sh
 
@@ -22,6 +24,8 @@
     sudo chmod u+x ./shopping_cart.sh
     ./shopping_cart.sh
 
+#### front-end:
+    cd ../front-end
     sudo chmod u+x ./solar_system.sh
     ./solar_system.sh
 
@@ -49,6 +53,8 @@
     sudo chmod u+x ./recipes_app.sh
     ./recipes_app.sh
 
+#### back-end
+    cd ../back-end
     sudo chmod u+x ./docker_todo_list.sh
     ./docker_todo_list.sh
 
@@ -66,3 +72,27 @@
 
     sudo chmod u+x ./blogs_api.sh
     ./blogs_api.sh
+
+    sudo chmod u+x ./stranger_things_frontend.sh
+    ./stranger_things_frontend.sh
+
+    sudo chmod u+x ./stranger_things_backend.sh
+    ./stranger_things_backend.sh
+
+    sudo chmod u+x ./trybe_smith.sh
+    ./trybe_smith.sh
+
+    sudo chmod u+x ./trybes_and_dragons.sh
+    ./trybes_and_dragons.sh
+
+    sudo chmod u+x ./trybe_futebol_clube.sh
+    ./trybe_futebol_clube.sh
+
+    sudo chmod u+x ./mongodb_commerce.sh
+    ./mongodb_commerce.sh
+
+    sudo chmod u+x ./car_shop.sh
+    ./car_shop.sh
+
+    sudo chmod u+x ./app_delivey.sh
+    ./app_delivey.sh
