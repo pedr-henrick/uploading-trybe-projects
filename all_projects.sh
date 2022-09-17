@@ -66,3 +66,27 @@
 
     sudo chmod u+x ./blogs_api.sh
     ./blogs_api.sh
+
+    sudo chmod u+x ./stranger_things_frontend.sh
+    ./stranger_things_frontend.sh
+
+    sudo chmod u+x ./stranger_things_backend.sh
+    ./stranger_things_backend.sh
+
+    sudo chmod u+x ./trybe_smith.sh
+    ./trybe_smith.sh
+
+    sudo chmod u+x ./trybes_and_dragons.sh
+    ./trybes_and_dragons.sh
+
+    sudo chmod u+x ./trybe_futebol_clube.sh
+    ./trybe_futebol_clube.sh
+
+    sudo chmod u+x ./mongodb_commerce.sh
+    ./mongodb_commerce.sh
+
+    sudo chmod u+x ./car_shop.sh
+    ./car_shop.sh
+
+    sudo chmod u+x ./app_delivey.sh
+    ./app_delivey.sh
