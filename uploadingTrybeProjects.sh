@@ -1,6 +1,9 @@
 #!/bin/bash
 
 ## Iremos precisar de algumas informações
+isGroupProject=false
+export isGroupProject
+
 echo "Qual a sua turma? ex.: 18"
 read turma
 export turma

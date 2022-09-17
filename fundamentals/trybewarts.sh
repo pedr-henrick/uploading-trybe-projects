@@ -1,5 +1,6 @@
 #!/bin/bash
 
+isGroupProject=true
 projectName="project-trybewarts"
 linkPortifolioTrybe="git@github.com:tryber/sd-0${turma,,}-${tribo,,}-project-trybewarts.git"
 namePortifolioTrybe="sd-0${turma,,}-${tribo,,}-project-trybewarts"
@@ -9,7 +10,8 @@ export linkPortifolioTrybe
 export namePortifolioTrybe
 export pathsInvert
 export projectName
+export isGroupProject
 
 cd ..
-sudo chmod u+x ./group_projects_upload_script.sh
-./group_projects_upload_script.sh
+sudo chmod u+x ./upload_script.sh
+./upload_script.sh

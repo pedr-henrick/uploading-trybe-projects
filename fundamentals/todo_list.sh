@@ -11,5 +11,5 @@ export pathsInvert
 export projectName
 
 cd ..
-sudo chmod u+x ./individual_projects_upload_script.sh
-./individual_projects_upload_script.sh
+sudo chmod u+x ./upload_script.sh
+./upload_script.sh

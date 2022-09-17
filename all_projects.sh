@@ -1,3 +1,5 @@
+#### Fundamentos:
+    cd fundamentals
     sudo chmod u+x ./lessons_learned.sh
     ./lessons_learned.sh
 
@@ -22,6 +24,8 @@
     sudo chmod u+x ./shopping_cart.sh
     ./shopping_cart.sh
 
+#### front-end:
+    cd ../front-end
     sudo chmod u+x ./solar_system.sh
     ./solar_system.sh
 
@@ -49,6 +53,8 @@
     sudo chmod u+x ./recipes_app.sh
     ./recipes_app.sh
 
+#### back-end
+    cd ../back-end
     sudo chmod u+x ./docker_todo_list.sh
     ./docker_todo_list.sh
 
