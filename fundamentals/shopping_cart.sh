@@ -1,5 +1,6 @@
 #!/bin/bash
 
+projectName="project-shopping-cart"
 linkPortifolioTrybe="git@github.com:tryber/sd-0${turma,,}-${tribo,,}-project-shopping-cart.git"
 namePortifolioTrybe="sd-0${turma,,}-${tribo,,}-project-shopping-cart"
 pathsInvert="--path trybe.yml --path reporter.json --path prototipo.gif --path README.md --path cypress.json --path cobertura.png --path .trybe/ --path cypress/ --path .github/ --invert-paths"

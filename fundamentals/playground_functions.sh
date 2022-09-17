@@ -1,5 +1,6 @@
 #!/bin/bash
 
+projectName="project-playground-functions"
 linkPortifolioTrybe="git@github.com:tryber/sd-0${turma,,}-${tribo,,}-project-playground-functions.git"
 namePortifolioTrybe="sd-0${turma,,}-${tribo,,}-project-playground-functions"
 pathsInvert="--path trybe.yml --path README.md --path .editorconfig --path .trybe/ --path tests/ --path .github/ --invert-paths"

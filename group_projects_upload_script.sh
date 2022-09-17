@@ -1,9 +1,5 @@
 #!/bin/bash
 
-## extrairemos o nome do projeto da trybe
-projectName=$(grep -Eo '(project|mysql|store)(-\w+){1,}' <<< $linkPortifolioTrybe)
-echo "$projectName"
-
 ## Com essas informações salvas seguiremos com os comando:
 
 ## Faremos o clone do repósitório da trybe
